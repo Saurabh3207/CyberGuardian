@@ -56,7 +56,7 @@ function Chatbot() {
     <div>
       <Header />
       <div className="styles.hero-image">
-        <img src={svgImage} alt="SVG Image" />
+        <img src={svgImage} alt="intro" />
       </div>
       <div className={styles.Chatbot}>
         <div className={styles["response-area"]}>
