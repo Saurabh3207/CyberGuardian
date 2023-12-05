@@ -19,6 +19,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "June 03, 2021",
 		cover: Oswap,
+		featured: false,
 	},
 	{
 		id: 2,
@@ -31,6 +32,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "July 19, 2023",
 		cover: Darkweb,
+		featured: true,
 	},
 	{
 		id: 3,
@@ -43,6 +45,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "Augsut 08, 2022",
 		cover: Cloud,
+		featured: true,
 	},
 	{
 		id: 4,
@@ -55,6 +58,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "May 24, 2022",
 		cover: Compliance,
+		featured: true,
 	},
 	{
 		id: 5,
@@ -67,6 +71,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "October 19, 2021",
 		cover: Nist,
+		featured: false,
 	},
 	{
 		id: 6,
@@ -79,6 +84,7 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "July 18, 2021",
 		cover: Forensic,
+		featured: true,
 	},
 	{
 		id: 7,
@@ -91,5 +97,6 @@ export const blogList = [
 		authorAvatar: Author,
 		createdAt: "October 13, 2023",
 		cover: Ai,
+		featured: false,
 	},
 ];

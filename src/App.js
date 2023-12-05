@@ -7,7 +7,9 @@ import Contact from "./components/Contact";
 import AdminDashboard from "./components/AdminDashboard";
 import PasswordStrengthChecker from "./components/PasswordStrengthChecker";
 import BlogHome from "./components/Home/BlogHome";
-import Blog from './components/Blog/blog';
+import Blog from "./components/Blog/blog";
+import "./style.css";
+import AboutUs from "./components/AboutUs/about_us";
 
 function App() {
 	const token = localStorage.getItem("token");
@@ -31,6 +33,7 @@ function App() {
 			/>
 			<Route path="/blogs" exact element={<BlogHome />} />
 			<Route path="/blogs/:id" element={<Blog />} />
+			<Route path="/about-us" element={<AboutUs />} />
 		</Routes>
 	);
 }
