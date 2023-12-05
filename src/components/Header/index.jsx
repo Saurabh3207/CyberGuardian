@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import userIcon from "../assets/images/user.png";
 
-
 const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -22,7 +21,7 @@ const Header = () => {
   }, []);
 
   // Function to parse JWT token and extract information
-  const parseJwt = (token) => {
+  const parseJwt = token => {
     const base64Url = token.split(".")[1];
     const base64 = base64Url.replace(/-/g, "+").replace(/_/g, "/");
     return JSON.parse(atob(base64));
@@ -35,7 +34,7 @@ const Header = () => {
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
 
-  const handleToggle = (e) => {
+  const handleToggle = e => {
     if (e.target.checked) {
       setTheme("dark");
     } else {
@@ -68,12 +67,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-              <Link to="/chatbot">
+            <Link to="/chatbot">
               <button className="btn btn-ghost text-l">CyberBot</button>
             </Link>
           </li>
           <li>
-              <Link to="/contact-us">
+            <Link to="/contact-us">
               <button className="btn btn-ghost text-l">Contact-Us</button>
             </Link>
           </li>
