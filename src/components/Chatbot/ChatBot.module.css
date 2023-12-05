@@ -1,0 +1,100 @@
+/* Chatbot.module.css */
+
+.hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Chatbot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; /* Set your desired background color */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .response-area {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff; /* Set your desired background color */
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar,
+  .bot-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-message {
+    flex-direction: row-reverse;
+  }
+  
+  .messageContent {
+    padding: 8px;
+    border-radius: 8px;
+    word-wrap: break-word;
+  }
+  
+  .user-message .messageContent {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .timestamp {
+    font-size: 10px;
+    color: #888;
+  }
+  
+  .prompt-area {
+    display: flex;
+    width: 100%;
+  }
+  
+  .input-box {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .submit {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add more styling for Header and Footer as needed */
+  
+  /* Header.css */
+  /* Footer.css */
+  
