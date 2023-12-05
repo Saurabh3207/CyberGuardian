@@ -5,27 +5,27 @@ import Header from "../Header";
 import Footer from "../Footer";
 import userAvatar from "../assets/images/user1.png";
 import botAvatar from "../assets/images/bot.png";
-import svgImage from '../assets/images/bot.svg'
+import svgImage from "../assets/images/bot.svg";
 
 function Chatbot() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     {
       message: "Hello, I'm your Chatbot! Ask me anything.",
-      sender: "Chatbot",
-    },
+      sender: "Chatbot"
+    }
   ]);
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setInput(event.target.value);
   };
 
-  const handleSend = async (event) => {
+  const handleSend = async event => {
     event.preventDefault();
 
     const newMessage = {
       message: input,
-      sender: "user",
+      sender: "user"
     };
 
     const newMessages = [...messages, newMessage];
@@ -35,7 +35,7 @@ function Chatbot() {
 
     try {
       const response = await axios.post("http://localhost:5000/predict", {
-        user_input: input,
+        user_input: input
       });
 
       const botResponse = response.data.bot_response;
@@ -44,8 +44,8 @@ function Chatbot() {
         ...newMessages,
         {
           message: botResponse,
-          sender: "Chatbot",
-        },
+          sender: "Chatbot"
+        }
       ]);
     } catch (error) {
       console.error("Error communicating with Flask API:", error.message);
@@ -56,7 +56,7 @@ function Chatbot() {
     <div>
       <Header />
       <div className="styles.hero-image">
-      <img src={svgImage} alt="SVG Image" />
+        <img src={svgImage} alt="SVG Image" />
       </div>
       <div className={styles.Chatbot}>
         <div className={styles["response-area"]}>

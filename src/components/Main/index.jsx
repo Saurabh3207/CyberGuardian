@@ -7,8 +7,6 @@ import passwordPic from "../assets/images/Password.jpeg";
 import cipherImg from "../assets/images/cipher.png";
 import steImg from "../assets/images/stego.jpeg";
 
-
-
 const Main = () => {
   return (
     <div>
@@ -85,12 +83,9 @@ const Main = () => {
               className=" rounded-lg shadow-1xl"
             />
             <p>Description of Tool 1.</p>
-            <button>
-
-            </button>
+            <button></button>
           </div>
           {/* Repeat for other tools */}
-          
         </div>
       </div>
       <div className="bg-base-300 p-8">
@@ -144,13 +139,11 @@ const Main = () => {
               className=" rounded-lg shadow-1xl"
             />
             <p>Description of Tool 1.</p>
-            <button>
+            <button></button>
+          </div>
+        </div>
+      </div>
 
-            </button>
-          </div>
-          </div>
-          </div>
-  
       <Footer />
     </div>
   );
