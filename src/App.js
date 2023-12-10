@@ -10,6 +10,8 @@ import BlogHome from "./components/Home/BlogHome";
 import Blog from "./components/Blog/blog";
 import "./style.css";
 import AboutUs from "./components/AboutUs/about_us";
+import CaesarCipher from "./components/Ceasercipher";
+//import CaesarCipher from "./components/Ceasercipher";
 
 function App() {
 	const token = localStorage.getItem("token");
@@ -34,6 +36,7 @@ function App() {
 			<Route path="/blogs" exact element={<BlogHome />} />
 			<Route path="/blogs/:id" element={<Blog />} />
 			<Route path="/about-us" element={<AboutUs />} />
+		    <Route path="/Ceaser-cipher" exact element={<CaesarCipher/>}/>
 		</Routes>
 	);
 }

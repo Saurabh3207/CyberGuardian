@@ -14,7 +14,7 @@ const Main = () => {
 	const [featuredBlogList, setfeaturedBlogList] = useState(FeaturedBlogList);
 	// useEffect(() => {
 	// 	window.scrollTo(0, 0);
-	// }, []);
+	// }, []);	// Scroll to top on load
 
 	return (
 		<div>
@@ -27,8 +27,8 @@ const Main = () => {
 						className="max-w-sm rounded-lg shadow-2xl"
 					/>
 					<div>
-						<h1 className="text-5xl font-bold">
-							Welcome to CyberGuardian !
+						<h1 className="text-5xl font-bold text-left">
+					Welcome to CyberGuardian !
 						</h1>
 						<p className="py-6">
 							Your digital shield in the cyber frontier! <br />
@@ -56,7 +56,7 @@ const Main = () => {
 							alt="Password Stregnth pic"
 							className=" rounded-lg shadow-1xl"
 						/>
-						<p>Description of Tool 1.</p>
+						<p>A password strength checker is a web tool that evaluates the security of a password.</p>
 						<Link to="/PasswordMeter">
 							<button className="btn btn-primary text-l">
 								Click Me
@@ -73,7 +73,12 @@ const Main = () => {
 							alt="Email Header Analyzer"
 							className=" rounded-lg shadow-1xl"
 						/>
-						<p>Description of Tool 1.</p>
+						<p>Email header analysis tools can make email headers more readable. Email headers contain metadata about the email</p>
+						<Link to="/emailheader">
+							<button className="btn btn-primary text-l">
+								Click Me
+							</button>
+						</Link>
 					</div>{" "}
 					<div className="bg-white p-4 rounded shadow-md">
 						{/* Tool content goes here */}
@@ -88,7 +93,12 @@ const Main = () => {
 							alt="cipher pic"
 							className=" rounded-lg shadow-1xl"
 						/>
-						<p>hii</p>
+						<p>A Caesar cipher is a simple method of encoding messages. It uses a substitution method where letters in the alphabet are shifted by a fixed number of spaces.</p>
+						<Link to="/Ceaser-cipher">
+							<button className="btn btn-primary text-l">
+								Click Me
+							</button>
+						</Link>
 					</div>{" "}
 					<div className="bg-white p-4 rounded shadow-md">
 						{/* Tool content goes here */}
@@ -100,8 +110,13 @@ const Main = () => {
 							alt="stegano"
 							className=" rounded-lg shadow-1xl"
 						/>
-						<p>Description of Tool 1.</p>
-						<button></button>
+						<p>Image steganography is the art of concealing information in a cover media. In image steganography, a message is embedded into an image by altering the values of some pixels. </p>
+						<Link to="/imagestegano">
+							<button className="btn btn-primary text-l">
+								Click Me
+							</button>
+						</Link>
+						
 					</div>
 					{/* Repeat for other tools */}
 				</div>

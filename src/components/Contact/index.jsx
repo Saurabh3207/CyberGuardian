@@ -1,36 +1,45 @@
 import React from "react";
 import styled from "styled-components";
-const Contact = () => {
-  const Wrapper = styled.section`
-    padding: 9rem 0 5rem 0;
-    .container {
-      margin-top: 6rem;
-      text-align: center;
+import './style.css';
 
-      .contact-form {
-        max-width: 50rem;
-        margin: auto;
+const Wrapper = styled.section`
+  padding: 9rem 0 5rem 0;
 
-        .conatact-inputs {
-          display: flex;
-          flex-direction: column;
-          gap: 3rem;
+  .container {
+    margin-top: 6rem;
+    text-align: center;
 
-          input[type="submit"] {
-            cursor: pointer;
-            transition: all 0.2s;
+    .contact-form {
+      max-width: 50rem;
+      margin: auto;
 
-            $:hover {
-              transform: scale(0.9);
-            }
+      .contact-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        input[type="submit"] {
+          cursor: pointer;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: #fff;
+            border: 1px solid #3498db;
+            color: #3498db;
+            transform: scale(0.9);
           }
         }
       }
     }
-  `;
+  }
+`;
+
+const Contact = () => {
   return (
     <Wrapper>
-      <h2 className="commonheading">Feel Free To Contact Us</h2>
+      <section className="box-container">
+        <h2 className="commonheading" align="center" className="section-heading">Feel Free To Contact Us</h2>
+      </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.493166378093!2d73.80558399357908!3d18.5177559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb9e53a05f9%3A0x2be5e8da02be693e!2sMIT%20World%20Peace%20University%20(MIT-WPU)!5e0!3m2!1sen!2sin!4v1701602640701!5m2!1sen!2sin"
         width="100%"
@@ -63,9 +72,10 @@ const Contact = () => {
               cols="30"
               rows="10"
               autoComplete="off"
+              placeholder="Feel free to express your views!"
               required
             ></textarea>
-            <input type="submit" value="send" />
+            <input type="submit" value="Send" />
           </form>
         </div>
       </div>

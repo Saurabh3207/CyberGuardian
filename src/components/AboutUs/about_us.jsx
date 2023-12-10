@@ -186,7 +186,7 @@ function AboutUs() {
 								<h3>Vedang Khare</h3>
 								<div className="team-info">
 									<p className="text-primary-content">
-										Head of SEO
+										Student
 									</p>
 								</div>
 								<p className="text-primary-content">

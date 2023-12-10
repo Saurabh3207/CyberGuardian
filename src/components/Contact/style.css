@@ -1,0 +1,73 @@
+
+body {
+    background-color: #e8dbdb; /* Slightly darker white color */
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #8b4513; /* Very light brown color */
+  }
+  
+  .box-container {
+    background-color: #ffebcd; /* Very light ochre yellow color */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -6rem; /* Adjust the margin-top to half of the current value */
+    margin-bottom: 4rem; /* Add space between the box and the maps */
+  }
+  
+  .common-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  iframe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .container {
+    margin-top: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 50rem;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input[type="submit"] {
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #2575b5;
+    transform: scale(1.05);
+  }
