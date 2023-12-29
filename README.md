@@ -4,11 +4,11 @@ The increasing reliance on digital platforms for various aspects of our lives ne
 
 Features includes:
 
-⮚Cybersecurity Tools
-⮚Cyberbot
-⮚Cyber security Blogs
-⮚Best Practices for Online Privacy
-⮚User-friendliness
+1)Cybersecurity Tools
+2)Cyberbot
+3)Cyber security Blogs
+4)Best Practices for Online Privacy
+5)User-friendliness
 
 
 
