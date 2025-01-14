@@ -26,17 +26,6 @@ Caesar Cipher Tool:
 
 Functionality: Encrypts and decrypts messages using the Caesar cipher.
 Importance: Offers a tool for secure communication through encryption techniques.
-Email Header Analyzer Tool:
-
-Functionality: Analyzes email headers for potential security threats.
-Importance: Aids in identifying and mitigating email-based security risks.
-
-
-Steganography Tool:
-
-Functionality: Allows users to hide sensitive information within other files.
-Importance: Provides a covert means of protecting information.
-
 
 b. Cyberbot:
 Objective: Engage users in meaningful conversations and provide assistance in the cybersecurity domain.
